@@ -1,6 +1,12 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
+    window = {
+      mappings = {
+        ["h"] = "close_node",
+        ["l"] = "open",
+      },
+    },
     default_component_configs = {
       indent = {
         with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
@@ -15,12 +21,12 @@ return {
       git_status = {
         symbols = {
           -- Change type
-          added = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
-          modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
+          added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
+          modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
           deleted = "✖", -- this can only be used in the git_status source
           renamed = "󰁕", -- this can only be used in the git_status source
           -- Status type
-          untracked = "",
+          untracked = "",
           ignored = "",
           unstaged = "󰄱",
           staged = "",
