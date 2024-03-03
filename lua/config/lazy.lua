@@ -29,6 +29,9 @@ require("lazy").setup({
     -- debugger
     { import = "lazyvim.plugins.extras.dap.core" },
 
+    -- better yank/paste
+    { import = "lazyvim.plugins.extras.coding.yanky" },
+
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },

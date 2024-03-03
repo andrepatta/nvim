@@ -15,4 +15,7 @@ return {
     --   },
     -- },
   },
+  {
+    "rebelot/kanagawa.nvim",
+  },
 }
