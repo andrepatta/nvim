@@ -22,3 +22,8 @@ vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
 
 vim.keymap.del("n", "<leader>`")
 vim.keymap.del("n", "<leader>K")
+
+-- NvTerm
+vim.keymap.set({ "n", "t" }, "<C-\\>", function()
+  require("nvterm.terminal").toggle("float")
+end, { desc = "NvTerm", remap = true })
